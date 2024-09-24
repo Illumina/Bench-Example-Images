@@ -1,0 +1,44 @@
+Port 2222
+HostKey /etc/workspace-auth/privateKey
+# Logging
+SyslogFacility AUTHPRIV
+LogLevel INFO
+# Authentication:
+LoginGraceTime 2m
+PermitRootLogin no
+StrictModes no
+MaxAuthTries 6
+MaxSessions 10
+PubkeyAuthentication yes
+
+PermitEmptyPasswords no
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+AllowAgentForwarding no
+AllowTcpForwarding yes
+GatewayPorts no
+X11Forwarding no
+PermitTTY yes
+TCPKeepAlive yes
+PermitUserEnvironment no
+ClientAliveInterval 10
+UseDNS no
+PidFile /tmp/sshd.pid
+MaxStartups 10:30:100
+PermitTunnel no
+
+# Accept locale-related environment variables
+#AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+#AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+#AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
+#AcceptEnv XMODIFIERS
+
+# override default of no subsystems
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
+
+HostKeyAlgorithms +ssh-rsa
+PubkeyAcceptedKeyTypes +ssh-rsa
+
+Match User ica
+	AuthorizedKeysFile /etc/workspace-auth/pubKey
+	AllowTcpForwarding yes

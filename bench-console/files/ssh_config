@@ -1,0 +1,11 @@
+Host 100-64-*.worker
+        Hostname %h
+
+Host 100-64-*
+        Hostname %h.worker
+
+Host worker manager workspace *.worker 100.64.* 100-64-*
+        User ica
+        Port 2222
+        StrictHostKeyChecking no
+        IdentityFile /etc/workspace-auth/privateKey
