@@ -5,15 +5,15 @@ This repository provides example instructions for building a minimal container i
 
 ### Bench-web
 
-This repository provides an example to run a web server in bench.
+The [bench-web](bench-web) repository provides a howto for running a web server in bench.
 
 ### Bench-console
 
-This repository provides an example to run a ssh server in bench.
+The [bench-console](bench-console) repository provides a howto for running a ssh server in bench.
 
 ### Bench-rstudio
 
-This repository provides an example to run rstudio open source.
+The [bench-rstudio](bench-rstudio) repository provides a howto for running a rstudio web server in bench.
 
 ## License
 
