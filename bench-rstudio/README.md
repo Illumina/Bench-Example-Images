@@ -33,7 +33,7 @@ docker buildx build --platform linux/amd64 -f Dockerfile -t bench-rstudio:1.0 .
 
 #### Uploading
 
-Instructions to upload this image can be found at [link](https://help.ica.illumina.com/home/h-dockerrepository#importing-a-private-image)
+Instructions to upload this image can be found at [ICA Help Pages](https://help.ica.illumina.com/home/h-dockerrepository#importing-a-private-image)
 
 ## License
 
