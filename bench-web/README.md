@@ -3,16 +3,12 @@ This repository provides example instructions for building a minimal container i
 
 ## Getting Started
 
-These instructions will cover usage information and for the docker container 
-
 ### Prerequisities
-
 
 In order to build this container you'll need to install docker.
 
-* [Windows](https://docs.docker.com/windows/started)
-* [OS X](https://docs.docker.com/mac/started/)
-* [Linux](https://docs.docker.com/linux/started/)
+* [OS X](https://docs.docker.com/desktop/install/mac-install/)
+* [Linux](https://docs.docker.com/desktop/install/linux/)
 
 ### Usage
 
